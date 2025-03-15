@@ -4,7 +4,7 @@ describe("Сложение", function() {
     });
 
     it("не должен возвращать 1 при сложении -2 и 2", function() {
-        assert.notEqual(add(-2, 2), 1);
+        assert.notEqual(add(-2, 1), -1);
     });
 
 });
@@ -15,7 +15,7 @@ describe("Вычитание", function() {
     });
 
     it("должен возвращать -4 при вычитании 2 из -2", function() {
-        assert.equal(subtract(-2, 2), -4);
+        assert.equal(subtract(-2, 4), -4);
     });
 
 });
@@ -26,7 +26,7 @@ describe("Умножение", function() {
     });
 
     it("должен возвращать -100 при умножении -5 на 20", function() {
-        assert.equal(multiply(-5, 20), -100);
+        assert.equal(multiply(-5, 25), -100);
     });
 
 });
@@ -37,7 +37,7 @@ describe("Деление", function() {
     });
 
     it("должен возвращать 0 при делении 0 на 42", function() {
-        assert.equal(divide(0, 42), 0);
+        assert.equal(divide(1, 42), 0);
     });
 
 });
@@ -48,7 +48,7 @@ describe("Возведение в степень", function() {
     });
 
     it("должен возвращать 64 при возведение 2 в степень 6", function() {
-        assert.equal(power(2, 6), 64);
+        assert.equal(power(2, 7), 64);
     });
 
 });
@@ -59,7 +59,7 @@ describe("Факториал первого числа", function() {
     });
 
     it("должен возвращать 2 при факториале 2", function() {
-        assert.equal(factorial(2), 2);
+        assert.equal(factorial(1), 2);
     });
 
 });
